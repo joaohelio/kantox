@@ -1,6 +1,6 @@
 # Kantox
 
-A checkout system for a small chain of kantoxs
+A checkout system for a small chain of supermarkets
 
 ## Features
 
@@ -9,8 +9,6 @@ A checkout system for a small chain of kantoxs
   - Buy-one-get-one-free for Green Tea
   - Bulk discount for Strawberries (3+ units: £4.50 each)
   - Two-thirds price for Coffee when buying 3+ units
-- Flexible pricing rules that can be changed easily
-- Items can be scanned in any order
 
 ## Setup
 
