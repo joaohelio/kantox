@@ -1,18 +1,53 @@
 # Kantox
 
-To start your Phoenix server:
+A checkout system for a small chain of kantoxs
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Features
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+- Add products to cart
+- Apply special pricing rules:
+  - Buy-one-get-one-free for Green Tea
+  - Bulk discount for Strawberries (3+ units: £4.50 each)
+  - Two-thirds price for Coffee when buying 3+ units
+- Flexible pricing rules that can be changed easily
+- Items can be scanned in any order
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Setup
 
-## Learn more
+You can run this project using Docker.
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+### Docker Setup
+
+#### Prerequisites
+
+- Docker
+- Docker Compose
+
+#### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/joaohelio/kantox.git
+cd kantox
+```
+
+4. Visit [`localhost:4000/checkout`](http://localhost:4000/checkout) in your browser
+
+Start the container:
+```bash
+docker compose up --build
+```
+
+## Running Tests
+
+You can run tests inside the container:
+```bash
+docker compose exec app mix test
+```
+
+## Project Structure
+
+- `lib/kantox/shopping_cart.ex` - Shopping cart logic
+- `lib/kantox/pricing_rules.ex` - Pricing rules implementation
+- `lib/kantox/product.ex` - Product schema
+- `lib/kantox_web/live/` - LiveView components for the UI
