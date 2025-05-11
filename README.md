@@ -31,7 +31,16 @@ git clone https://github.com/joaohelio/kantox.git
 cd kantox
 ```
 
-4. Visit [`localhost:4000/checkout`](http://localhost:4000/checkout) in your browser
+2. Set up environment variables:
+
+Create the following files and populate them with the respective environment variables:
+**.env**
+```bash
+SECRET_KEY_BASE=SECRET
+MIX_ENV=dev
+```
+
+3. Visit [`localhost:4000/checkout`](http://localhost:4000/checkout) in your browser
 
 Start the container:
 ```bash
