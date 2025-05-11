@@ -6,7 +6,7 @@ ARG BUILDER_IMAGE="hexpm/elixir:${ELIXIR_VERSION}-erlang-${OTP_VERSION}-debian-$
 
 FROM ${BUILDER_IMAGE} as os
 
-RUN apt-get update && apt-get install -f -y build-essential \
+RUN apt-get update && apt-get install -f -y build-essential git \
     && apt-get clean && rm -f /var/lib/apt/lists/*_*
 
 # Install hex package manager

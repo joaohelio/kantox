@@ -40,18 +40,20 @@ SECRET_KEY_BASE=SECRET
 MIX_ENV=dev
 ```
 
-3. Visit [`localhost:4000/checkout`](http://localhost:4000/checkout) in your browser
-
-Start the container:
+3. Start the container:
 ```bash
 docker compose up --build
 ```
+
+4. Visit [`localhost:4000/checkout`](http://localhost:4000/checkout) in your browser
 
 ## Running Tests
 
 You can run tests inside the container:
 ```bash
-docker compose exec app mix test
+alias dc-test="docker compose -f docker-compose.yml"
+
+dc-test run -e MIX_ENV=test kantox mix test
 ```
 
 ## Project Structure
