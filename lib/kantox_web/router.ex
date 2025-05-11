@@ -17,7 +17,11 @@ defmodule KantoxWeb.Router do
   scope "/", KantoxWeb do
     pipe_through :browser
 
+    get "/healthz", HealthCheckController, :index
+
     get "/", PageController, :home
+
+    live "/checkout", CheckoutLive, :index
   end
 
   # Other scopes may use custom stacks.
