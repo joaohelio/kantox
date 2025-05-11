@@ -51,3 +51,5 @@ docker compose exec app mix test
 - `lib/kantox/pricing_rules.ex` - Pricing rules implementation
 - `lib/kantox/product.ex` - Product schema
 - `lib/kantox_web/live/` - LiveView components for the UI
+
+![image](https://github.com/user-attachments/assets/d5f5ba2e-6795-4bdb-9852-b76bf16c919f)
