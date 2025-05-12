@@ -1,6 +1,6 @@
 # Kantox
 
-A checkout system for a small chain of supermarkets
+A checkout system (cashier) for a small chain of supermarkets
 
 ## Features
 
