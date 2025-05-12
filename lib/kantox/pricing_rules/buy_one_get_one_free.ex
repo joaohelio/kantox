@@ -6,9 +6,9 @@ defmodule Kantox.PricingRules.BuyOneGetOneFree do
 
   defstruct [:sku]
 
-  # @behaviour Kantox.PricingRules.PricingRule
+  @behaviour Kantox.PricingRules.PricingRule
 
-  # @impl true
+  @impl true
   def apply_discount(rule, cart_items) do
     applicable_items = Enum.filter(cart_items, &(&1.sku == rule.sku))
 
