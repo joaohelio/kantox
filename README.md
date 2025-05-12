@@ -4,7 +4,7 @@ A checkout system for a small chain of supermarkets
 
 ## Features
 
-- Add products to cart
+- Add products to the cart
 - Apply special pricing rules:
   - Buy-one-get-one-free for Green Tea
   - Bulk discount for Strawberries (3+ units: £4.50 each)
@@ -31,7 +31,7 @@ cd kantox
 
 2. Set up environment variables:
 
-Create the following file and populate them with the respective environment variables:
+Create the following file and populate it with the respective environment variables:
 **.env**
 ```bash
 SECRET_KEY_BASE=SECRET
