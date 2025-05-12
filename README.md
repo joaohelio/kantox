@@ -31,7 +31,7 @@ cd kantox
 
 2. Set up environment variables:
 
-Create the following files and populate them with the respective environment variables:
+Create the following file and populate them with the respective environment variables:
 **.env**
 ```bash
 SECRET_KEY_BASE=SECRET
