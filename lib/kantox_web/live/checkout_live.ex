@@ -1,5 +1,5 @@
 defmodule KantoxWeb.CheckoutLive do
-  use Phoenix.LiveView, layout: {KantoxWeb.Layouts, :app}
+  use KantoxWeb, :live_view
 
   alias Kantox.{Products, ShoppingCart}
 
